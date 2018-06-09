@@ -1,0 +1,74 @@
+//顏色定義區(橘/灰/深橘)
+$color_orange: #FA8B00
+$color_grey: #f3f3f1
+$color_dark_orange: #EB5E00
+$color_yellow: #FFE18D
+$color_dark_yellow: #FFDA71
+$color_dark_grey: #4F4C4B
+$color_background: #EFEEF1
+
+//尺寸定義區 (標題/內文/書籤按鈕/書籤icon/老師icon)
+$size_title: 25px
+$size_para: 15px
+$size_bookbtn: 42px
+$size_icon: 22px
+$size_teacher: 55px
+
+//尺寸(課程/上下半部/進度條/預購價/底部橘條)
+$width_class: 260px
+$height_toppart: 260px
+$height_bottompart: 184px
+$height_progressbar: 10px
+$height_pricerow: 22px
+$height_bottomorange: 5px
+
+//尺寸(課程框框的padding)
+$padding_class: 15px
+
+*
+  // border: solid 1px black
+  font-family: "微軟正黑體"
+  
+
+html,body
+  margin: 0
+  padding: 0
+  padding: 20px
+  
+body
+  background-color: $color_grey
+  
+@mixin size($w, $h)
+  width: $w
+  height: $h
+  
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+.login
+  border: solid 5px #ddd
+  max-width: 500px
+  padding: 50px
+  margin: 0 auto
+  background-color: $color_background
+
+
+.animals
+	// max-width: 1024px
+
+.animal
+	width: $width_class
+	padding: $padding_class
+	.top
+		height: $height_toppart
+		position: relative
+		overflow: hidden
+		.animal_img
+			+size(100%, 100%)
+			background-size: cover
+			background-position: center top
+			
+

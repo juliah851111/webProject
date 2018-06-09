@@ -1,0 +1,17 @@
+
+<div ng-init="getBook()">
+  <div class="heading"><br/><a href="#/books">上一頁</a><br/><br/></div>
+  <div class="books">
+    <div class="row">
+      <div class="col-md-12 book">
+        <div class="image"><img ng-src="{{book.imgurl}}"/></div>
+        <div class="texts">
+          <h5>名稱：{{book.name}}</h5>
+          <p>類型：{{book.genre}}</p>
+          <p>作者：{{book.author}}</p>
+          <p>出版社：{{book.publisher}}</p><a href="#/books/edit/{{book._id}}">Edit </a><a href="#" ng-click="removeBook(book._id)">Delete </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

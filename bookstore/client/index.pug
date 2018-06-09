@@ -1,0 +1,32 @@
+doctype html
+html(lang="en", ng-app="myApp")
+  head
+    meta(charset="UTF-8")
+    title Bookstore
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.css")
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#') Bookstore 
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li.nav-item
+            a.nav-link(href='#/books/add') Add Book 
+          
+
+        
+    .container
+      .row
+        .col-md-12
+          div(ng-view)
+    
+    script(type="text/javascript", src="bower_components/jquery/dist/jquery.min.js")
+    script(type="text/javascript", src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(type="text/javascript", src="bower_components/angular/angular.js")
+    script(type="text/javascript", src="bower_components/angular-route/angular-route.js")
+    script(type="text/javascript", src="app.js")
+    script(type="text/javascript", src="controller/books.js")
+    script(type="text/javascript", src="controller/genres.js")
+    

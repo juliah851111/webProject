@@ -1,0 +1,17 @@
+
+<div ng-init="getBooks()">
+  <div class="heading"><br/>
+    <h3>Latest Books</h3><br/>
+  </div>
+  <div class="books">
+    <div class="row">
+      <div class="col-md-6 book" ng-repeat="book in books">
+        <div class="texts">
+          <h5>{{book.name}}</h5>
+          <p>{{book.author}}</p><a class="details" href="#/books/details/{{book._id}}">See Details</a>
+        </div>
+        <div class="image"><img ng-src="{{book.imgurl}}"/></div>
+      </div>
+    </div>
+  </div>
+</div>

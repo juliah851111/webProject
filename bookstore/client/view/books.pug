@@ -1,0 +1,19 @@
+div(ng-init='getBooks()')
+	.heading
+		br
+		h3 Latest Books
+		br
+	.books
+		.row
+			.col-md-6.book(ng-repeat='book in books')
+				.texts
+					h5 {{book.name}}
+					p {{book.author}}
+					a.details(href='#/books/details/{{book._id}}') See Details
+				.image
+					img(ng-src='{{book.imgurl}}')
+
+
+	
+  	
+

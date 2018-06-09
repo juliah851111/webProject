@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Login
+	link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css")
+	link(rel="stylesheet", href="css/main.css" type="text/css")
+
+	body
+		.container#app
+			.login(v-if="message.message === 'failed'")
+				.form-group
+					label(for='exampleInputEmail1') Account Name
+					input#exampleInputEmail1.form-control(placeholder='Enter account name', v-model="account")
+					
+				.form-group
+					label(for='exampleInputPassword1') Password
+					input#exampleInputPassword1.form-control(type='password', placeholder='Password', v-model="pwd")
+				button.btn.btn-primary(v-on:click="verifyAC()") Submit
+			.loginSuccess(v-if="message.message === 'success'")
+				h1 Login Success!!!
+
+
+				
+
+
+
+
+		script(type="text/javascript" src="bower_components/jquery/dist/jquery.min.js")
+		script(type="text/javascript" src="bower_components/vue/dist/vue.min.js")
+		script(type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+		script(type="text/javascript" src="js/main.js")
+		
+		
+		
+		

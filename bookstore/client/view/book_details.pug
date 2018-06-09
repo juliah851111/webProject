@@ -1,0 +1,28 @@
+
+div(ng-init='getBook()')
+
+	.heading
+		br
+		a(href='#/books') 上一頁
+		br
+		br
+	.books
+		.row
+			.col-md-12.book
+				.image
+					img(ng-src='{{book.imgurl}}')
+				.texts
+					h5 名稱：{{book.name}}
+					p 類型：{{book.genre}}
+					p 作者：{{book.author}}
+					p 出版社：{{book.publisher}}
+					a(href='#/books/edit/{{book._id}}') Edit 
+					a(href='#' ng-click='removeBook(book._id)') Delete 
+
+
+					
+
+
+	
+  	
+

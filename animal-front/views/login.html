@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/main.css" type="text/css"/>
+  <body>
+    <div class="container" id="app">
+      <div class="login" v-if="message.message === 'failed'">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Account Name</label>
+          <input class="form-control" id="exampleInputEmail1" placeholder="Enter account name" v-model="account"/>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password" v-model="pwd"/>
+        </div>
+        <button class="btn btn-primary" v-on:click="verifyAC()">Submit</button>
+      </div>
+      <div class="loginSuccess" v-if="message.message === 'success'">
+        <h1>Login Success!!!</h1>
+      </div>
+    </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</head>

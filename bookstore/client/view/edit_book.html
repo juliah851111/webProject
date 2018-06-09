@@ -1,0 +1,39 @@
+
+<div>
+  <div class="heading"><br/><a href="#/books">上一頁</a><br/><br/></div>
+  <div class="books">
+    <div class="row">
+      <div class="col-md-12 book">
+        <form ng-submit="updateBook()" ng-init="getBook()">
+          <h3>編輯書本</h3>
+          <div class="form-group">
+            <label>名稱</label>
+            <input class="form-control" type="text" ng-model="book.name" placeholder="請輸入名稱"/>
+          </div>
+          <div class="form-group">
+            <label>作者</label>
+            <input class="form-control" type="text" ng-model="book.author" placeholder="請輸入作者"/>
+          </div>
+          <div class="form-group">
+            <label>類型</label>
+            <select class="form-control" ng-model="book.genre">
+              <option value="勵志">勵志</option>
+              <option value="語言">語言</option>
+              <option value="浪漫">浪漫</option>
+              <option value="懸疑">懸疑</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>出版社</label>
+            <input class="form-control" type="text" ng-model="book.publisher" placeholder="請輸入出版社"/>
+          </div>
+          <div class="form-group">
+            <label>圖片網址</label>
+            <input class="form-control" type="text" ng-model="book.imgurl" placeholder="請輸入圖片網址"/>
+          </div>
+          <button class="btn btn-info" type="submit">送出</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

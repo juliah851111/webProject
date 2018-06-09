@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Animals</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/main.css" type="text/css"/>
+  <body>
+    <div class="container animals" id="app">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Animal</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 animal" v-for="data in datas">
+          <div class="top">
+            <div class="animal_img" v-if="data.album_file" v-bind:style="'background-image: url('+data.album_file+')'"></div>
+            <div class="animal_img" v-if="!data.album_file" style="background-image: url('http://animal-adoption.coa.gov.tw/images/pic/noimage_dog.jpg')"></div>
+          </div>
+          <div class="bottom">
+            <h2>{{area[data.animal_area_pkid]}}</h2>
+            <h3 v-if="data.animal_sex === 'M'">公</h3>
+            <h3 v-if="data.animal_sex === 'F'">母</h3>
+            <h3>{{data.shelter_name}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</head>

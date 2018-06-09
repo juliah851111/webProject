@@ -1,0 +1,49 @@
+div
+	.heading
+		br
+		a(href='#/books') 上一頁
+		br
+		br
+	.books
+		.row
+			.col-md-12.book
+				form(ng-submit='updateBook()' ng-init='getBook()')
+					h3 編輯書本
+					.form-group
+						label 名稱
+						input.form-control(type='text',ng-model='book.name', placeholder='請輸入名稱')
+					.form-group
+						label 作者
+						input.form-control(type='text',ng-model='book.author', placeholder='請輸入作者')
+					.form-group
+						label 類型
+						select.form-control(ng-model='book.genre')
+							option(value='勵志') 勵志
+							option(value='語言') 語言
+							option(value='浪漫') 浪漫
+							option(value='懸疑') 懸疑
+					
+					.form-group
+						label 出版社
+						input.form-control(type='text',ng-model='book.publisher', placeholder='請輸入出版社')
+					.form-group
+						label 圖片網址
+						input.form-control(type='text',ng-model='book.imgurl', placeholder='請輸入圖片網址')
+					button.btn.btn-info(type='submit') 送出
+
+					
+						
+					
+
+
+
+					
+				  
+
+
+					
+
+
+	
+  	
+

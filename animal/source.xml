@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photolist>
+<photo>
+        <adsrc>images/ad03.jpg</adsrc>
+        <adurl>http://buy.minwt.com/index.php?route=product/product&product_id=56</adurl>
+    </photo>
+ <photo>
+        <adsrc>images/ad02.jpg</adsrc>
+        <adurl>http://buy.minwt.com/index.php?route=product/product&product_id=57</adurl>
+    </photo>
+    <photo>
+        <adsrc>images/ad01.jpg</adsrc>
+        <adurl>http://buy.minwt.com/index.php?route=product/product&product_id=55</adurl>
+    </photo>
+</photolist>

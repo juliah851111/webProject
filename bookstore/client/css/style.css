@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  width: 100%; }
+
+.book {
+  padding: 30px;
+  border: solid 1px #DDD; }
+
+.texts, .image {
+  display: inline-block; }
+
+.texts {
+  width: 40%;
+  vertical-align: top; }
+  .texts h5 {
+    line-height: 1.5;
+    font-weight: 900; }
+  .texts p {
+    color: #555; }
+  .texts .details {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none; }
+
+.image {
+  width: 50%; }

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+* {
+  font-family: "微軟正黑體"; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  padding: 20px; }
+
+body {
+  background-color: #f3f3f1; }
+
+.login {
+  border: solid 5px #ddd;
+  max-width: 500px;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: #EFEEF1; }
+
+.animal {
+  width: 260px;
+  padding: 15px; }
+  .animal .top {
+    height: 260px;
+    position: relative;
+    overflow: hidden; }
+    .animal .top .animal_img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center top; }
